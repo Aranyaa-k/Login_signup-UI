@@ -25,28 +25,33 @@ class SignupOption extends StatelessWidget {
           height: 24,
         ),
 
-        ElevatedButton(
-          onPressed: () {
-            print('signup');
-          },
-          style: ButtonStyle(
-            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-            RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(18.0),
+        Container(
+          height: 40,
+          decoration: BoxDecoration(
+            color: Colors.deepPurple[300],
+            borderRadius: BorderRadius.all(
+              Radius.circular(25),
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.deepPurple[300]!.withOpacity(0.2),
+                spreadRadius: 3,
+                blurRadius: 4,
+                offset: Offset(0,3),
+              ),
+            ]
+          ),
+          child: Center(
+            child: Text(
+              'SIGN UP',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.grey[850],
               ),
             ),
-            backgroundColor:MaterialStateProperty.all(Colors.deepPurple[300]),
           ),
-          child: Text(
-            'SIGN UP',
-            style: TextStyle(
-              color: Colors.grey[850],
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          
-          ),
+        ),
       ],
     );
   }

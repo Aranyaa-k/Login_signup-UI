@@ -44,7 +44,7 @@ class Login extends StatelessWidget {
 
         TextField(
           decoration: InputDecoration(
-            hintText: "Email / Username",
+            hintText: "Email",
             hintStyle: TextStyle(
               fontSize: 16,
               color: Colors.grey[850]!.withOpacity(0.3),
